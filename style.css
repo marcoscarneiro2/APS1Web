@@ -1,0 +1,12 @@
+table{
+    width: 100%;
+    margin-bottom: 20%;
+}
+#alter tr{ /* Muda a cor do TR */
+	background: #5f5f3a;
+    color: white;
+	} 
+#alter td {
+	background: #771a1a; /* Muda a cor do TD */
+    color: white;
+	}
