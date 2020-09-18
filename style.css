@@ -1,12 +1,68 @@
+body{
+    margin: 0;
+    font-family: 'Caviar Dreams';
+    background-color: #433c3c;
+}
+.navbar{
+    background: rgba(5, 5, 5, 0.82);
+    text-align: center;
+    width: 99%;
+    padding: 7px;
+    position: fixed;
+    z-index: 15;
+}
+.navbar li{
+    list-style-type: none;
+    display: contents; 
+}
+.navbar li a {
+    color: aliceblue;
+    text-decoration: none;
+    margin-left: 5%;
+}
+
+.banner{
+      background-image: url(img/banner.png);
+    width: 100%;
+    height: 700px;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.video{
+    float: right;
+    margin-right: 8%;
+    margin-top: 37%;
+    float: right
+    position: absolute;
+}
+#casosBR,#tabelaRJ,#mapa{
+    width: 100%;
+    background-color: #2e2828;
+    height: auto;
+    padding-top: 1px;    
+}
+#casosBR h2,#tabelaRJ h2,#mapa h2{
+    margin-left: 1%;
+    color: white;
+}
+
 table{
     width: 100%;
     margin-bottom: 20%;
 }
 #alter tr{ /* Muda a cor do TR */
-	background: #5f5f3a;
+	background: #3e312c;
     color: white;
 	} 
 #alter td {
-	background: #771a1a; /* Muda a cor do TD */
+	background: #522525; /* Muda a cor do TD */
     color: white;
 	}
+.footer{
+    text-align: center;
+    color: white;
+    padding: 5px;
+    background-color: #2e2828;
+}
