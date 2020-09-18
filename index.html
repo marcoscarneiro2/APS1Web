@@ -1,38 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+
 <head>
-    <meta charset="UTF-8">
-    <title>APS1 WEB</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>APS1 WEB</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="CovidAPI.js"></script>
 </head>
+
 <body>
-   
-   <table border cellpadding="5px" cellspacing="0" ID="alter">
-       <thead>
-           <tr> 
-               <th>técnica utilizada</th>
-               <th>laboratório farmacêutico</th>
-               <th>pesquisadores envolvidos</th>
-               <th>chefe da pesquisa</th>
-               <th>fases da vacina</th>
-               <th>previsão</th>
-           </tr>
-       </thead>
-                  
-       <tr> 
-           <td>x</td>
-           <td>x</td>
-           <td>x</td>
-           <td>x</td>
-           <td>x</td>
-           <td>x</td>
-       </tr>
-       
-   </table>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.1575826080775!2d-43.29485468503574!3d-22.83365868504897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997b75d00fbb4b%3A0xf00e44c4800e8d47!2sR.%20Pequiri%2C%20290%20-%20Br%C3%A1s%20de%20Pina%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2021215-110!5e0!3m2!1spt-PT!2sbr!4v1600384298311!5m2!1spt-PT!2sbr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    
-    
-    
-<script src="script.js"></script>    
+
+	<table border cellpadding="5px" cellspacing="0" ID="alter">
+		<thead>
+			<tr>
+				<th>técnica utilizada</th>
+				<th>laboratório farmacêutico</th>
+				<th>pesquisadores envolvidos</th>
+				<th>chefe da pesquisa</th>
+				<th>fases da vacina</th>
+				<th>previsão</th>
+			</tr>
+		</thead>
+
+		<tr>
+			<td>x</td>
+			<td>x</td>
+			<td>x</td>
+			<td>x</td>
+			<td>x</td>
+			<td>x</td>
+		</tr>
+	</table>
+
+
+	<h2>Casos COVID-19 BRASIL</h2>
+	<table border="1">
+		<thead>
+			<th>Estados</th>
+			<th>Casos</th>
+			<th>Mortes</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td id="estado"></td>
+				<td id="casos"></td>
+				<td id="mortes"></td>
+			</tr>
+		</tbody>
+	</table>
+	<h2>Casos COVID-19 Rio de Janeiro</h2>
+	<table border="1">
+		<thead>
+			<th>Estados</th>
+			<th>Casos</th>
+			<th>Mortes</th>
+            <th>Atualizado</th>
+		</thead>
+		<tbody>
+			<tr id="tabela"></tr>
+		</tbody>
+	</table>
+
+
+	<iframe
+		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.1575826080775!2d-43.29485468503574!3d-22.83365868504897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997b75d00fbb4b%3A0xf00e44c4800e8d47!2sR.%20Pequiri%2C%20290%20-%20Br%C3%A1s%20de%20Pina%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2021215-110!5e0!3m2!1spt-PT!2sbr!4v1600384298311!5m2!1spt-PT!2sbr"
+		width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+		tabindex="0"></iframe>
+
+
+
+	<script src="script.js"></script>
 </body>
+
 </html>
