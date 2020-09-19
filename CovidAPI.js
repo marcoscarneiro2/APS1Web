@@ -10,11 +10,11 @@ function DadosEstados() {
     .then(function (data) {
       console.log(data);
       return data.data.map(function (estados) {
-        document.getElementById("estados").innerHTML += estados.state + "</br>";
-        document.getElementById("casos").innerHTML += estados.cases + "</br>";
-        document.getElementById("mortes").innerHTML += estados.deaths + "</br>";
-        document.getElementById("horas").innerHTML += estados.datetime.slice(0, 10) + "</br>";
-      });
+        document.getElementById("estados").innerHTML += "<td>" + estados.state +"</td>"+ "<hr/>";
+        document.getElementById("casos").innerHTML += "<td>" + estados.cases + "</td>" +  "<hr/>";
+        document.getElementById("mortes").innerHTML += "<td>" + estados.deaths + "</td>" +  "<hr/>";
+        document.getElementById("horas").innerHTML += "<td>" + estados.datetime.slice(0, 10) + "</td>" +  "<hr/>";
+      }); 
     })
     .catch((err) => console.error(err));
 }
@@ -54,6 +54,7 @@ function DadosRJ() {
     })
     .catch((err) => console.error(err));
 }
+
 
 DadosEstados();
 DadosRJ();
